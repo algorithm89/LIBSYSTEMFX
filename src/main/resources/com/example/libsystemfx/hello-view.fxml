@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="856.0" style="-fx-background-image: url('https://images.alphacoders.com/739/739062.png'); -fx-background-size: 1024 768; -fx-background-position: center center;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.libsystemfx.HelloController">
+   <children>
+      <TableView fx:id="Books" layoutX="16.0" layoutY="165.0" prefHeight="214.0" prefWidth="827.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="186.0" text="ID" />
+            <TableColumn fx:id="BookName" prefWidth="203.99998474121094" text="BookName" />
+            <TableColumn fx:id="BookDescription" prefWidth="436.0" text="BookDescription" />
+         </columns>
+      </TableView>
+      <Button layoutX="373.0" layoutY="418.0" mnemonicParsing="false" onAction="#ViewTable" text="VIEW" />
+      <Pane layoutY="62.0" prefHeight="7.0" prefWidth="856.0" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black;" />
+      <Text layoutX="29.0" layoutY="44.0" stroke="#43b3c9" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke-width: 1; -fx-stroke: white;" text="Library Books" textAlignment="CENTER" wrappingWidth="261.1354522705078">
+         <font>
+            <Font name="Jokerman" size="37.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="88.0" layoutX="60.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/book1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button" layoutX="338.0" layoutY="465.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="25.0" prefWidth="114.0" text="AddBook" />
+   </children>
+</Pane>

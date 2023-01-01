@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-position: center center; -fx-background-size: cover; -fx-background-image: url('https://images7.alphacoders.com/895/895992.jpg');" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.libsystemfx.ActionBookController">
+   <children>
+      <TextField fx:id="textField1" layoutX="75.0" layoutY="100.0" prefHeight="25.0" prefWidth="270.0" />
+      <Button fx:id="AddBooks" layoutX="492.0" layoutY="188.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="25.0" prefWidth="55.0" text="ADD" />
+      <Label fx:id="label1" layoutX="75.0" layoutY="357.0" prefHeight="34.0" prefWidth="288.0" />
+      <ImageView fitHeight="115.0" fitWidth="160.0" layoutX="463.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/MagicBook.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textField2" layoutX="73.0" layoutY="204.0" prefHeight="163.0" prefWidth="264.0" />
+      <Button fx:id="DelBook" layoutX="494.0" layoutY="307.0" mnemonicParsing="false" onAction="#DelBooks" text="DELETE" />
+      <TextField fx:id="textField3" layoutX="473.0" layoutY="260.0" prefHeight="25.0" prefWidth="96.0" />
+      <Text layoutX="73.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: white; -fx-stroke-width: 1;" text="Book Name">
+         <font>
+            <Font name="Jokerman" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="469.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: white; -fx-stroke-width: 1;" text="Book ID">
+         <font>
+            <Font name="Jokerman" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke-width: 1; -fx-stroke: white;" text="Book Description">
+         <font>
+            <Font name="Jokerman" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
